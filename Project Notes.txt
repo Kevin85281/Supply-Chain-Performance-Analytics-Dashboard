@@ -1,0 +1,49 @@
+Supply Chain Performance Analytics Dashboard
+
+Tool: Power BI
+Domain: Supply Chain and Operations Analytics
+
+Objective
+Build an executive level Power BI dashboard to analyze order volume, revenue, profitability, and delivery performance, enabling stakeholders to monitor service levels and identify operational tradeoffs.
+
+Tool & Skills
+Power BI, Power Query, DAX, Data Modeling, KPI Design, Interactive Dashboards
+
+Data & Modeling
+Order level transactional data was cleaned and transformed in Power Query.
+A star schema was implemented with:
+FactOrders containing order, revenue, profit, and delivery metrics
+DimDate, DimCustomer, and DimProduct as dimension tables
+
+The model uses Order Date as the active relationship to support demand and revenue trend analysis, with Shipping Date retained for future time intelligence.
+
+Key KPIs (DAX Measures)
+Total Orders
+Total Revenue
+Total Profit
+Profit Margin %
+On Time Delivery %
+Late Delivery Rate
+Average Delivery Delay
+All KPIs were centrally managed in a dedicated measures table and formatted for executive consumption.
+
+Dashboard Overview
+
+The report presents a single executive overview page featuring:
+KPI cards summarizing volume, value, margin, and service level
+Revenue trend over time
+On time delivery performance by shipping mode
+Order distribution by delivery delay buckets
+Service vs profit tradeoff analysis
+Interactive slicers for date, market, customer segment, and shipping mode allow dynamic exploration. Tooltips enhance insights without cluttering the layout.
+
+
+Key Insights
+
+On time delivery performance is below optimal levels, indicating service risk
+Majority of orders fall into short delay buckets, suggesting process inefficiencies rather than extreme failures
+Faster shipping modes improve service but impact profitability
+Delivery performance varies significantly by shipping mode and customer segment
+
+Outcome
+This project demonstrates end to end BI capability: data modeling, DAX driven KPIs, and executive focused dashboard design. The solution supports data driven decisions in supply chain and operations management.
